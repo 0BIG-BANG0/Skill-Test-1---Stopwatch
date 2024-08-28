@@ -27,7 +27,7 @@ startBtn.addEventListener("click", function () {
     startTime = Date.now() - elapsedTime;
     timerInterval = setInterval(function () {
       elapsedTime = Date.now() - startTime;
-      timeDisplay.textContent = formatTime(elapsedTime); // Updates time display every second
+      timeDisplay.textContent = formatTime(elapsedTime); // Updates time display every milli second
     }, 1);
   }
 });
